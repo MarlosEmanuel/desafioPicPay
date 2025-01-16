@@ -1,6 +1,8 @@
-[phases]
-build = "mvn clean package -DskipTests"
-start = "java -jar target/*.jar"
+[phases.build]
+cmd = "mvn clean package -DskipTests"
+
+[phases.start]
+cmd = "java -jar target/*.jar"
 
 [environment]
 JAVA_VERSION = "23"
